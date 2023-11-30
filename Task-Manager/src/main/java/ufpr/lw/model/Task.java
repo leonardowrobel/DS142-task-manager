@@ -3,11 +3,28 @@ package ufpr.lw.model;
 public class Task extends Manageable {
     String description;
     Boolean isDone;
-    Long doneAt;
+
+    public Task() {
+    }
 
     public Task(String description) {
         this.description = description;
         isDone = false;
-        doneAt = null;
+    }
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
+
+    public Boolean getDone() {
+        return isDone;
+    }
+
+    public void setDone(Boolean done) {
+        isDone = done;
     }
 }
