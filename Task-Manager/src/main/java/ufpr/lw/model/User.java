@@ -13,11 +13,6 @@ public class User extends Manageable {
         this.isActive = false;
     }
 
-    public User(String username) {
-        this.username = username;
-        this.isActive = false;
-    }
-
     public User(String username, String password) {
         this.username = username;
         this.password = password;
